@@ -1,0 +1,16 @@
+# Test all types
+set num to 42
+set decimal to 3.14
+set text to "Hello"
+set is_true to true
+set is_false to false
+
+say: num
+say: decimal
+say: text
+say: is_true
+say: is_false
+
+# Arithmetic with typed variables
+add 8 to num
+say: num

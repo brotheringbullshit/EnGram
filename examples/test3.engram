@@ -1,0 +1,6 @@
+# Nope. Interpreter - with if
+set txt to ""
+listen into txt
+if txt equals "Nope." then
+    say: "Nope."
+    end

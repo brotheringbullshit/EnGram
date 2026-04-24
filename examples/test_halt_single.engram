@@ -1,0 +1,32 @@
+# Test individual halt keywords
+say: "Testing conclude"
+conclude
+say: "After conclude"
+
+say: "Testing wrap up"
+wrap up
+say: "After wrap up"
+
+say: "Testing stop"
+stop
+say: "After stop"
+
+say: "Testing cease"
+cease
+say: "After cease"
+
+say: "Testing terminate"
+terminate
+say: "After terminate"
+
+say: "Testing expire"
+expire
+say: "After expire"
+
+say: "Testing finish"
+finish
+say: "After finish"
+
+say: "Testing HLT"
+HLT
+say: "After HLT"

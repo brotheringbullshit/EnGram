@@ -1,0 +1,4 @@
+# Nope. Interpreter - working version
+set txt to ""
+listen into txt
+say: txt

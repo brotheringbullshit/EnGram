@@ -1,0 +1,38 @@
+# Engram Example Programs
+
+# Hello World - multiple ways to print!
+say: "Hello, World!"
+announce: "Welcome to Engram!"
+communicate: "English IS the programming language"
+
+# Variables
+set count to 5
+set name to "Engram"
+set pi to 3.14159
+
+# Print variables
+echo: name
+display: count
+present: pi
+
+# Arithmetic
+add 10 to count
+multiply count by 2
+announce: count
+
+# Input example (uncomment to try)
+# listen into user_name
+# say: "You entered: "
+# echo: user_name
+
+# Conditional example
+set temperature to 25
+if temperature greater 30 then
+    say: "It's hot!"
+    end
+if temperature less 15 then
+    say: "It's cold!"
+    end
+if temperature equals 25 then
+    say: "Perfect temperature!"
+    end

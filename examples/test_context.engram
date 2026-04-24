@@ -1,0 +1,27 @@
+# Context and sense modifier tests
+
+# Test 1: Basic operations work
+set x to 10
+add 5 to x
+say: x
+
+# Test 2: Context namespaces
+set context name alpha
+set context name beta
+
+use context alpha
+set a to 1
+set b to 2
+
+use context beta
+set a to 100
+set b to 200
+
+use context alpha
+say: a
+
+use context beta
+say: a
+
+# Test 3: Sense modifier with print
+announce: "test" in the sense of the keyword say

@@ -1,0 +1,20 @@
+# Test multi-word comparison operators
+set temp to 35
+if temp greater than 30 then
+    say: "It's hot!"
+    end
+
+set age to 18
+if age less than 21 then
+    say: "Under 21"
+    end
+
+set score to 100
+if score greater or equal 100 then
+    say: "Perfect score!"
+    end
+
+set num to 5
+if num less or equal 10 then
+    say: "In range!"
+    end

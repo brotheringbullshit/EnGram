@@ -1,0 +1,30 @@
+# Turing-complete features test
+
+# Test 1: Modulo
+set num to 17
+modulo num by 5
+say: num
+
+# Test 2: Break in loop
+set count to 0
+loop 10 times
+    add 1 to count
+    if count equals 5 then
+        break
+        end
+    end
+say: count
+
+# Test 3: Fibonacci
+set a to 0
+set b to 1
+set n to 0
+loop 10 times
+    set temp to a
+    set a to b
+    add temp to b
+    add 1 to n
+    end
+say: a
+
+say: "Done!"

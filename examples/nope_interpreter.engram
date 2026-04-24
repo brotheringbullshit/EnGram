@@ -1,0 +1,11 @@
+# Nope. Interpreter
+set txt to ""
+listen into txt
+set matched to false
+if txt equals "Nope." then
+    say: "Nope."
+    set matched to true
+    end
+if matched equals false then
+    say: "Error at line 1. Error type: compilation_failed, Fix code please."
+    end

@@ -1,0 +1,5 @@
+# Simple Nope. test
+set x to 0
+if x equals 0 then
+    say: "works"
+    end

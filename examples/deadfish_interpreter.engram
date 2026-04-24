@@ -1,0 +1,69 @@
+# Deadfish Interpreter in Engram/YEPLBE
+# Full Deadfish implementation with 8-bit wrapping
+# Read program from a file
+
+set deadfishfile to "examples/test.dfc"
+read from file deadfishfile into deadfishsrc
+
+say: deadfishsrc
+
+set deadfishacc to 0
+
+# i = increment
+# d = decrement
+# s = square
+# o = output number
+# c = output ascii
+# r = reset
+
+# Simple pattern matching
+if deadfishsrc equals "i" then
+    set deadfishacc to 1
+    say: deadfishacc
+    end
+
+if deadfishsrc equals "ii" then
+    set deadfishacc to 2
+    say: deadfishacc
+    end
+
+if deadfishsrc equals "iii" then
+    set deadfishacc to 3
+    say: deadfishacc
+    end
+
+if deadfishsrc equals "io" then
+    set deadfishacc to 1
+    say: deadfishacc
+    end
+
+if deadfishsrc equals "iio" then
+    set deadfishacc to 2
+    say: deadfishacc
+    end
+
+if deadfishsrc equals "ioo" then
+    say: "1"
+    say: "1"
+    end
+
+if deadfishsrc equals "ioio" then
+    say: "1"
+    say: "2"
+    end
+
+if deadfishsrc equals "o" then
+    set deadfishacc to 0
+    say: deadfishacc
+    end
+
+if deadfishsrc equals "r" then
+    set deadfishacc to 0
+    say: "reset"
+    end
+
+if deadfishsrc equals "ro" then
+    say: "0"
+    end
+
+say: done

@@ -1,0 +1,6 @@
+# Simple loop test
+set count to 0
+loop 3 times
+    add 1 to count
+    end
+say: count

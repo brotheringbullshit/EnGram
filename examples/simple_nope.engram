@@ -1,0 +1,7 @@
+# Simple Nope. - just check equals
+set input_val to "Nope."
+if input_val equals "Nope." then
+    say: "it works"
+    stop
+    end
+say: "failed"

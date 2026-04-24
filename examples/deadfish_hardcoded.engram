@@ -1,0 +1,79 @@
+# Deadfish Interpreter in Engram - Simplified
+# Put the program code as a string
+
+set prog to "ioo"
+set acc to 0
+set matched to false
+
+# Single: i
+if prog equals "i" then
+    set acc to 1
+    set matched to true
+    end
+
+# Two: ii, io, is
+if prog equals "ii" then
+    set acc to 2
+    set matched to true
+    end
+
+if prog equals "io" then
+    say: "1"
+    set matched to true
+    end
+
+if prog equals "is" then
+    set acc to 1
+    set matched to true
+    end
+
+# Three: iii, iio, ioo, ioio
+if prog equals "iii" then
+    set acc to 3
+    set matched to true
+    end
+
+if prog equals "iio" then
+    say: "2"
+    set matched to true
+    end
+
+if prog equals "ioo" then
+    say: "1"
+    say: "1"
+    set matched to true
+    end
+
+if prog equals "ioio" then
+    say: "1"
+    say: "2"
+    set matched to true
+    end
+
+if prog equals "ioioio" then
+    say: "1"
+    say: "2"
+    say: "3"
+    set matched to true
+    end
+
+# Four+: iiii, iiiio
+if prog equals "iiii" then
+    set acc to 4
+    set matched to true
+    end
+
+if prog equals "iiiio" then
+    say: "5"
+    set matched to true
+    end
+
+if prog equals "iioo" then
+    say: "2"
+    say: "2"
+    set matched to true
+    end
+
+if matched equals false then
+    say: "Unknown command"
+    end

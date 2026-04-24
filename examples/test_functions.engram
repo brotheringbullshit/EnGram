@@ -1,0 +1,53 @@
+# Function, return, and delete tests
+
+# Test 1: Basic function
+define a function with the name greet
+    say: "Hello from function!"
+    leave
+end
+
+go to greet
+
+# Test 2: Function with return
+define a function with the name getFive
+    leave 5
+end
+
+set result to 0
+go to getFive with result
+say: result
+
+# Test 3: Function with parameters
+define a function with the name add
+    set a to 0
+    set b to 0
+    leave a plus b
+end
+
+go to add with 10, 5
+
+# Test 4: Delete variables
+set x to 100
+set y to 200
+say: x
+say: y
+
+abandon x
+say: y
+
+# Test 5: Delete and recreate function
+define a function with the name testFunc
+    say: "First version"
+    leave
+end
+
+go to testFunc
+
+annihilate testFunc
+
+define a function with the name testFunc
+    say: "Second version"
+    leave
+end
+
+go to testFunc

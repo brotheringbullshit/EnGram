@@ -1,0 +1,9 @@
+# Break test
+set count to 0
+loop 10 times
+    add 1 to count
+    if count equals 5 then
+        break
+        end
+    end
+say: count

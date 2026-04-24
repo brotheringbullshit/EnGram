@@ -1,0 +1,10 @@
+# Test return check
+define a function with the name getNum
+    leave 42
+end
+
+did getNum return 42 then
+    say: "Got 42!"
+    end
+
+say: "After if"

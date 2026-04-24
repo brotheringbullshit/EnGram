@@ -1,0 +1,28 @@
+# Test halt keywords
+say: "Before halt"
+halt
+say: "After halt - won't print"
+
+wrap up
+say: "After wrap up"
+
+conclude
+say: "After conclude"
+
+stop
+say: "After stop"
+
+cease
+say: "After cease"
+
+terminate
+say: "After terminate"
+
+expire
+say: "After expire"
+
+finish
+say: "After finish"
+
+HLT
+say: "After HLT"

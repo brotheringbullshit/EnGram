@@ -1,0 +1,7 @@
+# Nope. - simplest version
+# Input: "Nope." outputs "Nope."
+# Anything else: compilation error
+
+set i to ""
+listen into i
+say: i

@@ -1,0 +1,6 @@
+# Very simple test - if with set inside
+set x to 0
+if x equals 0 then
+    set x to 1
+    end
+say: x

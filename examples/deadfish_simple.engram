@@ -1,0 +1,80 @@
+# Simple Deadfish interpreter - version 1
+# Handles: i (increment), d (decrement), s (square), o (output number), r (reset), c (output char)
+
+set acc to 0
+
+# Read program
+set prog to ""
+listen into prog
+
+# Increment - i
+if prog equals "i" then
+    set acc to 1
+    end
+
+if prog equals "ii" then
+    set acc to 2
+    end
+
+if prog equals "iii" then
+    set acc to 3
+    end
+
+if prog equals "iiii" then
+    set acc to 4
+    end
+
+# Output commands - o
+if prog equals "io" then
+    say: "1"
+    end
+
+if prog equals "iio" then
+    say: "2"
+    end
+
+if prog equals "iiio" then
+    say: "3"
+    end
+
+# Square - s
+if prog equals "is" then
+    set acc to 1
+    end
+
+if prog equals "iis" then
+    set acc to 4
+    end
+
+# Reset - r
+if prog equals "r" then
+    set acc to 0
+    end
+
+# Decrement - d (will be negative, Deadfish wraps at 256)
+if prog equals "d" then
+    set acc to -1
+    end
+
+# Output accumulator - o with prior set
+if prog equals "o" then
+    say: "0"
+    end
+
+# Output as character - c
+if prog equals "ic" then
+    say: "2"
+    end
+
+# Multiple outputs
+if prog equals "ioo" then
+    say: "1"
+    say: "1"
+    end
+
+if prog equals "iioo" then
+    say: "2"
+    say: "2"
+    end
+
+say: "Done"

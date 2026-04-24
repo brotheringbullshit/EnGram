@@ -1,0 +1,7 @@
+# Library file - greeting function
+define a function with the name greet
+    say: "Hello from library!"
+    leave
+end
+
+set lib_version to "1.0"

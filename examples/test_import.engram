@@ -1,0 +1,6 @@
+# Import test
+import examples/lib.engram
+
+say: "After import"
+go to greet
+say: lib_version

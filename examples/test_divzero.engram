@@ -1,0 +1,2 @@
+set x to 10
+divide x by 0

@@ -1,0 +1,37 @@
+# Extended if tests
+
+# Test 1: Did function return specific value?
+define a function with the name getNum
+    leave 42
+end
+
+did getNum return 42 then
+    say: "Got 42!"
+    end
+
+# Test 2: Standard if
+set x to 10
+if x greater than 5 then
+    say: "x is greater than 5"
+    end
+
+# Test 3: are we there yet
+define a function with the name done
+    leave true
+end
+
+go to done
+are we there yet then
+    say: "We arrived!"
+    end
+
+# Test 4: has function equal
+define a function with the name getValue
+    leave 100
+end
+
+does getValue equal 100 then
+    say: "Value is 100!"
+    end
+
+say: "All tests done!"

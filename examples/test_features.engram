@@ -1,0 +1,4 @@
+# Test stacks
+push 5 to mystack
+push 10 to mystack
+stack size of mystack

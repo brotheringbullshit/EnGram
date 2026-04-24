@@ -1,0 +1,8 @@
+# Simple if tests
+
+set x to 10
+if x greater than 5 then
+    say: "x is greater than 5"
+    end
+
+say: "Done"

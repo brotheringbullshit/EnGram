@@ -1,0 +1,18 @@
+set program to "i"
+set acc to 0
+set matched to false
+
+if program equals "i" then set acc to 1 set matched to true end
+if program equals "ii" then set acc to 2 set matched to true end
+if program equals "iii" then set acc to 3 set matched to true end
+if program equals "io" then say: "1" set matched to true end
+if program equals "iio" then say: "2" set matched to true end
+if program equals "ioo" then say: "1" say: "1" set matched to true end
+if program equals "ioio" then say: "1" say: "2" set matched to true end
+if program equals "ioioio" then say: "1" say: "2" say: "3" set matched to true end
+if program equals "is" then set acc to 1 set matched to true end
+if program equals "iis" then set acc to 4 set matched to true end
+if program equals "o" then say: "0" set matched to true end
+if program equals "r" then set acc to 0 set matched to true end
+
+if matched equals false then say: "Unknown" end

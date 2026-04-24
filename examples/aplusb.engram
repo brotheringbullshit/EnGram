@@ -1,0 +1,8 @@
+# A + B Problem in Engram/YEPLBE
+# Reads two integers, adds them, outputs the sum
+
+listen into a
+listen into b
+add a to result
+add b to result
+announce: result

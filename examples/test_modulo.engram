@@ -1,0 +1,3 @@
+# Simple modulo test
+set x to 17
+modulo x by 5
